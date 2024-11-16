@@ -7,6 +7,9 @@
   font-size: 14px;
   background-color: var(--page-bg);
   margin-bottom: 100px;
+  @media (max-width: 1440px) {
+    height: 75px;
+  }
 
   &__logo {
     display: flex;
@@ -17,6 +20,10 @@
     width: 240px;
     height: 88px;
     background-color: #fff;
+    @media (max-width: 1440px) {
+      width: 198px;
+      height: 75px;
+    }
     &-img {
       width: 123px;
       height: 23px;
