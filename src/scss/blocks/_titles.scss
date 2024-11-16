@@ -1,0 +1,10 @@
+.title {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 42px;
+  color: var(--text-color);
+
+  @include mobile {
+    font-size: 28px;
+  }
+}

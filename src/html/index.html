@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Завершённые акции</title>
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link href="./img/favicons/favicon.svg" rel="icon" type="image/x-icon">
+  <link href="./img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+</head>
+
+<body>
+  @@include('blocks/_header.html')
+  <main class="main">
+    <div class="container">
+      @@include('blocks/_actions.html')
+      @@include('blocks/_chempions.html')
+      @@include('blocks/_prizes.html')
+      @@include('blocks/_partaking.html')
+    </div>
+  </main>
+  @@include('blocks/_footer.html')
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

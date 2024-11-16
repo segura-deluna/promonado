@@ -1,0 +1,143 @@
+.actions {
+  margin-bottom: 110px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__lists {
+    width: 100%;
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    &:nth-child(1) .actions__name {
+      min-width: 138px;
+    }
+
+    &:nth-child(2) .actions__name {
+      min-width: 234px;
+    }
+
+    &:nth-child(3) .actions__name {
+      min-width: 259px;
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    border-radius: 50px;
+    padding: 11px 11px 11px 24px;
+    font-weight: 700;
+    font-size: 22px;
+    background-color: var(--second-color);
+  }
+
+  &__name-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin-left: 24px;
+  }
+
+  &__name-icon-img {
+    width: 12px;
+    height: 7px;
+    stroke: var(--deep-blue);
+  }
+
+  &__list {
+    position: relative;
+
+    &:nth-child(1) .actions__list-items {
+      width: 138px;
+    }
+
+    &:nth-child(2) .actions__list-items {
+      width: 234px;
+    }
+    &:nth-child(3) .actions__list-items {
+      width: 423px;
+    }
+  }
+
+  &__list-items {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    border-radius: 12px;
+    height: 160px;
+    padding: 16px 20px;
+    overflow-y: scroll;
+    background-color: var(--text-color);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+
+    & label {
+      margin-left: 12px;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #888;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__card {
+    border-radius: 30px;
+    width: 422px;
+    height: 354px;
+    padding: 40px;
+    background-color: var(--first-color);
+  }
+
+  &__card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    gap: 35px;
+    font-family: var(--font-main);
+    color: var(--text-color);
+  }
+
+  &__card-text {
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 0.8;
+  }
+
+  &__card-description {
+    font-weight: 600;
+    font-size: 28px;
+  }
+}

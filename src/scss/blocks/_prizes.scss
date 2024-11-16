@@ -1,0 +1,95 @@
+.prizes {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    border-radius: 30px;
+    width: 305px;
+    height: 305px;
+    background-color: var(--light-blue);
+    padding: 18px 0 0 18px;
+    overflow: hidden;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mobile {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  &__card-header {
+    max-width: 275px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  &__card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card-description {
+    max-width: 50%;
+  }
+
+  &__card-text {
+    max-width: 112px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 106%;
+    margin-top: 20px;
+    margin-bottom: 37px;
+    & span {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 106%;
+    }
+  }
+
+  &__card-btn {
+    border: 1px solid #4677f2;
+    border-radius: 30px;
+    width: 116px;
+    height: 40px;
+    margin-bottom: 60px;
+    background-color: var(--second-color);
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  &__card-image {
+    min-height: 180px;
+  }
+}
+// Swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 300px !important;
+  height: 305px !important;
+  @include mobile {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+
+  @include laptop {
+    display: flex !important;
+  }
+}

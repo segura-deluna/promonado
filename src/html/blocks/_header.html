@@ -1,0 +1,42 @@
+<header class="header">
+  <a class="header__logo" href="/">
+    <img src="./img/logo.svg" alt="Промонадо" class="header__logo-img">
+  </a>
+  <div class="header__menu">
+
+    <button class="header__region" type="button">
+      <span>Выберите регион</span>
+      <div class="header__icon">
+        <svg class="header__icon-img">
+          <use xlink:href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+        </svg>
+      </div>
+    </button>
+
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="dropdown-btn"><a class="header__link" href="#">Акции</a></li>
+        <ul class="header__list-dropdown">
+          <li class="header__list-dropdown-link dropdown-item">Активные</li>
+          <li class="header__list-dropdown-link dropdown-item">Завершённые</li>
+        </ul>
+        <li><a class="header__link" href="#">Бренды</a></li>
+        <li><a class="header__link" href="#">Призы</a></li>
+        <li><a class="header__link" href="#">Промокоды</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__button-login">
+      <button data-modal-type="auth" class="button-login" type="button">
+        Вход
+        <div class="button-login__img">
+          <img class="button-login__icon" src="./img/login.png" alt="Вход" title="Вход">
+        </div>
+      </button>
+    </div>
+  </div>
+  <button class="header__burger" type="button" aria-label="Меню">
+    <div class="header__lines"></div>
+  </button>
+</header>
+@@include('_mobile-nav.html')

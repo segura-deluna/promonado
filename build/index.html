@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Завершённые акции</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link href="./img/favicons/favicon.svg" rel="icon" type="image/x-icon" />
+		<link href="./img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+	</head>
+
+	<body>
+		<header class="header">
+			<a class="header__logo" href="/">
+				<img src="./img/logo.svg" alt="Промонадо" class="header__logo-img" />
+			</a>
+			<div class="header__menu">
+				<button class="header__region" type="button">
+					<span>Выберите регион</span>
+					<div class="header__icon">
+						<svg class="header__icon-img">
+							<use xlink:href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+						</svg>
+					</div>
+				</button>
+
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="dropdown-btn"><a class="header__link" href="#">Акции</a></li>
+						<ul class="header__list-dropdown">
+							<li class="header__list-dropdown-link dropdown-item">Активные</li>
+							<li class="header__list-dropdown-link dropdown-item">Завершённые</li>
+						</ul>
+						<li><a class="header__link" href="#">Бренды</a></li>
+						<li><a class="header__link" href="#">Призы</a></li>
+						<li><a class="header__link" href="#">Промокоды</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__button-login">
+					<button data-modal-type="auth" class="button-login" type="button">
+						Вход
+						<div class="button-login__img">
+							<picture>
+								<source srcset="./img/login.webp 1x, ./img/login@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/login.png 1x, ./img/login@2x.png 2x" type="image/png" />
+								<img class="button-login__icon" src="./img/login.png" alt="Вход" title="Вход" />
+							</picture>
+						</div>
+					</button>
+				</div>
+			</div>
+			<button class="header__burger" type="button" aria-label="Меню">
+				<div class="header__lines"></div>
+			</button>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="docs.html">Документация</a></li>
+			</ul>
+		</div>
+
+		<main class="main">
+			<div class="container">
+				<section class="actions">
+					<h1 class="actions__title title">Подводим итоги прошедших акций</h1>
+					<div class="actions__lists">
+						<div class="actions__list">
+							<button class="actions__name dropdown-btn">
+								Год
+								<span class="actions__name-icon">
+									<svg class="actions__name-icon-img">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+									</svg>
+								</span>
+							</button>
+							<ul class="actions__list-items">
+								<li class="actions__list-item">
+									<input type="checkbox" id="test1" />
+									<label for="test1">2024</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test2" />
+									<label for="test2">2023</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test3" />
+									<label for="test3">2022</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test4" />
+									<label for="test4">2021</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test5" />
+									<label for="test5">2020</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test6" />
+									<label for="test6">2019</label>
+								</li>
+							</ul>
+						</div>
+						<div class="actions__list">
+							<button class="actions__name dropdown-btn">
+								Торговая сеть
+								<span class="actions__name-icon">
+									<svg class="actions__name-icon-img">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+									</svg>
+								</span>
+							</button>
+							<ul class="actions__list-items">
+								<li class="actions__list-item">
+									<input type="checkbox" id="test7" />
+									<label for="test7">Axe</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test8" />
+									<label for="test8">Черный жемчуг</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test9" />
+									<label for="test9">Инмарко</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test10" />
+									<label for="test10">Camay</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test11" />
+									<label for="test11">Lamoda</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test12" />
+									<label for="test12">Axe</label>
+								</li>
+							</ul>
+						</div>
+						<div class="actions__list">
+							<button class="actions__name dropdown-btn">
+								Название акции
+								<span class="actions__name-icon">
+									<svg class="actions__name-icon-img">
+										<use xlink:href="./img/svgsprite/sprite.symbol.svg#arrow-down"></use>
+									</svg>
+								</span>
+							</button>
+							<ul class="actions__list-items">
+								<li class="actions__list-item">
+									<input type="checkbox" id="test14" />
+									<label for="test14">Пусть всегда будет вкусно!</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test15" />
+									<label for="test15">Держи курс на&#160;свежесть</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test16" />
+									<label for="test16">Зарядитесь двойной свежестью&#8230;</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test17" />
+									<label for="test17">Требуй большего с&#160;TRESemme</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test18" />
+									<label for="test18">Держи курс на&#160;свежесть</label>
+								</li>
+								<li class="actions__list-item">
+									<input type="checkbox" id="test19" />
+									<label for="test19">Пусть всегда будет вкусно!</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="actions__cards">
+						<div class="actions__card">
+							<div class="actions__card-content">
+								<p class="actions__card-text">348</p>
+								<p class="actions__card-description">запущенных акций</p>
+							</div>
+						</div>
+						<div class="actions__card">
+							<div class="actions__card-content">
+								<p class="actions__card-text">21 458</p>
+								<p class="actions__card-description">разыгранных призов</p>
+							</div>
+						</div>
+						<div class="actions__card">
+							<div class="actions__card-content">
+								<p class="actions__card-text">3 450</p>
+								<p class="actions__card-description">реальных победителей</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="chempions">
+					<h2 class="chempions__title title">Поздравляем наших победителей</h2>
+					<div class="chempions__list">
+						<div class="chempions__list-header">
+							<div class="chempions__list-header-cell">#</div>
+							<div class="chempions__list-header-cell">Имя</div>
+							<div class="chempions__list-header-cell">Название акции</div>
+							<div class="chempions__list-header-cell">Приз</div>
+						</div>
+						<div class="chempions__items">
+							<div class="chempions__item">
+								<div class="chempions__item-cell">1</div>
+								<div class="chempions__item-cell">Анна</div>
+								<div class="chempions__item-cell">Пусть всегда будет вкусно!</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">2</div>
+								<div class="chempions__item-cell">Никита</div>
+								<div class="chempions__item-cell">Открывайте свой секрет красоты с&#160;TRESemme!</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">3</div>
+								<div class="chempions__item-cell">Александр</div>
+								<div class="chempions__item-cell">Зарядитесь двойной свежестью с&#160;Rexona</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">4</div>
+								<div class="chempions__item-cell">Алексей Иванов</div>
+								<div class="chempions__item-cell">Пломбирно на&#160;душе</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">5</div>
+								<div class="chempions__item-cell">Геннадий Петрович</div>
+								<div class="chempions__item-cell">Требуй большего с&#160;TRESemme</div>
+								<div class="chempions__item-cell">Электронный сертификат Детский Мир</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">6</div>
+								<div class="chempions__item-cell">Анатолий Рай</div>
+								<div class="chempions__item-cell">Скидки до&#160;35% на&#160;мужские антиперспиранты&#8230;</div>
+								<div class="chempions__item-cell">Электронный сертификат Детский Мир</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">7</div>
+								<div class="chempions__item-cell">Анастасия</div>
+								<div class="chempions__item-cell">Разбудите свою природную красоту</div>
+								<div class="chempions__item-cell">Электронный сертификат Детский Мир</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">8</div>
+								<div class="chempions__item-cell">Анна</div>
+								<div class="chempions__item-cell">Пусть всегда будет вкусно!</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">9</div>
+								<div class="chempions__item-cell">Никита</div>
+								<div class="chempions__item-cell">Открывайте свой секрет красоты с&#160;TRESemme!</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+							<div class="chempions__item">
+								<div class="chempions__item-cell">10</div>
+								<div class="chempions__item-cell">Александр</div>
+								<div class="chempions__item-cell">Зарядитесь двойной свежестью с&#160;Rexona</div>
+								<div class="chempions__item-cell">Электронный сертификат Спортмастер</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="prizes">
+					<h2 class="prizes__title title">Еще не&#160;стали победителем? На&#160;Промонадо для Вас всегда найдется приз</h2>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Ноутбук</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image1.webp 1x, ./img/image1@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image1.png 1x, ./img/image1@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image1.png" alt="Ноутбук" title="Ноутбук" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Электронный подарочный сертификат Lamoda</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image2.webp 1x, ./img/image2@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image2.png 1x, ./img/image2@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image2.png" alt="Lamoda" title="Электронный подарочный сертификат Lamoda" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Музыкальная колонка</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image3.webp 1x, ./img/image3@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image3.png 1x, ./img/image3@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image3.png" alt="Музыкальная колонка" title="Музыкальая колонка" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Баллы на&#160;карту X5 Клуба</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image4.webp 1x, ./img/image4@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image4.png 1x, ./img/image4@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image4.png" alt="X5 Клуб" title="X5 Клуб" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Ноутбук</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image1.webp 1x, ./img/image1@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image1.png 1x, ./img/image1@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image1.png" alt="Ноутбук" title="Ноутбук" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Электронный подарочный сертификат Lamoda</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image2.webp 1x, ./img/image2@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image2.png 1x, ./img/image2@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image2.png" alt="Lamoda" title="Электронный подарочный сертификат Lamoda" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Музыкальная колонка</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image3.webp 1x, ./img/image3@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image3.png 1x, ./img/image3@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image3.png" alt="Музыкальная колонка" title="Музыкальая колонка" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="prizes__card">
+									<h2 class="prizes__card-header">Баллы на&#160;карту X5 Клуба</h2>
+									<div class="prizes__card-content">
+										<div class="prizes__card-description">
+											<p class="prizes__card-text">Дата проведения акции:<span>08.06&#160;&#8212; 10.07</span></p>
+											<button class="prizes__card-btn">К&#160;акции</button>
+										</div>
+										<picture>
+											<source srcset="./img/image4.webp 1x, ./img/image4@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/image4.png 1x, ./img/image4@2x.png 2x" type="image/png" />
+											<img class="prizes__card-image" src="./img/image4.png" alt="X5 Клуб" title="X5 Клуб" />
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</section>
+
+				<section class="partaking">
+					<div class="partaking__items">
+						<div class="partaking__description">
+							<h2 class="partaking__title title">Хотите принять участие в&#160;акции?</h2>
+							<ol class="partaking__list">
+								<li class="partaking__list-item">Покупайте любимые товары</li>
+								<li class="partaking__list-item">Принимайте участие в&#160;акциях</li>
+								<li class="partaking__list-item">Ждите результатов и&#160;выигрывайте!</li>
+							</ol>
+							<a href="https://promonado.ru/actions" class="partaking__btn">Принять участие</a>
+						</div>
+						<div class="partaking__image">
+							<picture>
+								<source srcset="./img/image22.webp 1x, ./img/image22@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/image22.png 1x, ./img/image22@2x.png 2x" type="image/png" />
+								<img src="./img/image22.png" alt="family" title="Семья" />
+							</picture>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
