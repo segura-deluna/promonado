@@ -1,38 +1,87 @@
-.mobile-nav {
-	position: fixed;
-	// top: 0;
-	top: -100%;
-	width: 100%;
-	height: 100%;
-    z-index: 99;
+.burger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #3167ee;
+  @media (max-width: 430px) {
+    top: 10px;
+  }
 
-	display: flex;
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.line {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  &:not(:nth-last-child(1)) {
+    margin-bottom: 3px;
+  }
+}
+
+/* Стили для навигационного меню */
+.menu {
+  position: relative;
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 25px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+  color: #333;
+  font-size: 18px;
+}
+
+/* Стили для активного состояния бургер-меню */
+.burger__menu.active .line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.burger__menu.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger__menu.active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* Стили для открытого меню */
+.menu.active {
+  display: flex;
+}
+
+/* Адаптивность */
+@media (min-width: 1080px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: #8ccae6;
-	transition: all 0.2s ease-in;
-}
-
-.mobile-nav--open {
-	top: 0;
-}
-
-.mobile-nav a {
-	color: #fff;
-}
-
-.mobile-nav__list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
-	font-size: 28px;
-
-	& .active {
-		opacity: 0.5;
-	}
+  }
 }

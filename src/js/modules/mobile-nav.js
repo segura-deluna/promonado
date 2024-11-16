@@ -1,14 +1,13 @@
 function mobileNav() {
-	// Mobile nav button
-	const navBtn = document.querySelector('.mobile-nav-btn');
-	const nav = document.querySelector('.mobile-nav');
-	const menuIcon = document.querySelector('.nav-icon');
+  // Получаем элементы
+  const burgerMenu = document.getElementById('burgerMenu');
+  const menu = document.getElementById('menu');
 
-	navBtn.onclick = function () {
-		nav.classList.toggle('mobile-nav--open');
-		menuIcon.classList.toggle('nav-icon--active');
-		document.body.classList.toggle('no-scroll');
-	};
+  // Добавляем обработчик клика по бургер-меню
+  burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
 }
 
 export default mobileNav;
