@@ -4,6 +4,10 @@
   font-size: 42px;
   color: var(--text-color);
 
+  @media (max-width: 1080px) {
+    font-size: 36px;
+  }
+
   @media (max-width: 430px) {
     font-size: 28px;
   }

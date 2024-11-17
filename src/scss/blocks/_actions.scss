@@ -1,8 +1,14 @@
 .actions {
   margin-bottom: 110px;
+  @media (max-width: 1080px) {
+    margin-bottom: 75px;
+  }
 
   &__title {
     margin-bottom: 48px;
+    @media (max-width: 1080px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__lists {
@@ -13,19 +19,31 @@
     justify-content: start;
     gap: 24px;
     margin-bottom: 40px;
+    @media (max-width: 1080px) {
+      gap: 14px;
+    }
   }
 
   &__list {
     &:nth-child(1) .actions__name {
       min-width: 138px;
+      @media (max-width: 1080px) {
+        min-width: 68px;
+      }
     }
 
     &:nth-child(2) .actions__name {
       min-width: 234px;
+      @media (max-width: 1080px) {
+        min-width: 159px;
+      }
     }
 
     &:nth-child(3) .actions__name {
       min-width: 259px;
+      @media (max-width: 1080px) {
+        min-width: 188px;
+      }
     }
   }
 
@@ -39,6 +57,12 @@
     font-weight: 700;
     font-size: 22px;
     background-color: var(--second-color);
+    @media (max-width: 1080px) {
+      font-weight: 600;
+      font-size: 18px;
+      height: 30px;
+      padding: 0;
+    }
   }
 
   &__name-icon {
@@ -50,6 +74,9 @@
     border-radius: 50%;
     background-color: var(--text-color);
     margin-left: 24px;
+    @media (max-width: 1080px) {
+      display: none;
+    }
   }
 
   &__name-icon-img {
@@ -87,6 +114,9 @@
     font-weight: 500;
     font-size: 20px;
     color: #000;
+    @media (max-width: 1080px) {
+      font-size: 16px;
+    }
   }
 
   &__list-item {
@@ -97,6 +127,7 @@
     & label {
       margin-left: 12px;
       transition: color 0.3s ease;
+
       &:hover {
         color: #888;
       }
@@ -124,8 +155,11 @@
       height: 307px;
       padding: 32px;
     }
-    @media (max-width: 1090px) {
+    @media (max-width: 1080px) {
       width: 100%;
+    }
+    @media (max-width: 430px) {
+      height: 198px;
     }
   }
 
@@ -139,6 +173,9 @@
     gap: 35px;
     font-family: var(--font-main);
     color: var(--text-color);
+    @media (max-width: 430px) {
+      gap: 20px;
+    }
   }
 
   &__card-num {
@@ -147,6 +184,9 @@
     line-height: 0.8;
     @media (max-width: 1440px) {
       font-size: 90px;
+    }
+    @media (max-width: 430px) {
+      font-size: 76px;
     }
   }
 

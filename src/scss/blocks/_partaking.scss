@@ -9,6 +9,10 @@
   background-position: right bottom;
   background-repeat: no-repeat;
 
+  @media (max-width: 1080px) {
+    margin-bottom: 75px;
+  }
+
   &__items {
     display: flex;
     justify-content: space-between;
