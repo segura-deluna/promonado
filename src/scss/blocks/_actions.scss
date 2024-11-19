@@ -97,7 +97,7 @@
     }
     &:nth-child(3) .actions__list-items {
       width: 423px;
-      @media (max-width: 430px) {
+      @media (max-width: 1080px) {
         width: 335px;
         left: -178px;
       }
